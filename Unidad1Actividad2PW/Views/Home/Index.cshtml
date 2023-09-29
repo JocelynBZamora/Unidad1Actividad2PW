@@ -1,0 +1,68 @@
+﻿@model int
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: #f3c8f1;
+        }
+        header {
+            background-color: #a4bdff;
+        }
+        h1{
+            font-family: cursive;
+            text-align: center;
+        }
+        .DivInp{
+            text-align: center;
+            
+        }
+        .DivB{
+            text-align: center;
+            padding: 10px;
+        }
+        .button{
+            width: 90px;
+            height: 25px;
+        }
+        footer{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: #a4bdff;
+        }
+        p{
+            text-align:center;
+        }
+    </style>
+    <title>Unidad1Eje1</title>
+</head>
+<body>
+    <header>
+        <h1>Conversión de monedas</h1>
+    </header>
+    <form>
+    <main> 
+        <div class="DivInp">
+            <input type="number" name="valor" min="0"/>
+                <input type="radio" value="USD" name="Moneda" id="Radio1" />
+                <label for="Radio1">USD</label>
+                <input type="radio" value="MX" name="Moneda" id="radio2" />
+                <label for="radio2">MX</label>
+        </div>
+        <div class="DivB">
+            <input type="submit" class="button" value="Ok"/>
+            <label> $@Model</label>
+        </div>
+    </main>
+
+    </form>
+    <footer>
+        <div class="footer">
+            <p>Programación Web - Unidad 1</p>
+        </div>
+    </footer>
+</body>
+</html>
